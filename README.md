@@ -345,8 +345,6 @@ python benchmarks/run_benchmark.py --url "https://arxiv.org/pdf/2503.21088"
 
 ## 🚀 Quick start
 
-> **Note**: OmniFetcher is **not published on PyPI** — there is no `pip install omnifetcher`. Clone the repo and install dependencies locally.
-
 ### Prerequisites
 
 - Python **3.10+**
@@ -367,15 +365,14 @@ pip install -r requirements.txt
 playwright install chromium   # Linux
 ```
 
-### 2. (Optional) local editable CLI
+### 2. (Optional) register the CLI command
 
-To use the `omnifetcher` command (same as `python -m omnifetcher.start`):
+To run `omnifetcher` directly (same as `python -m omnifetcher.start`):
 
 ```bash
 pip install -e .
+omnifetcher
 ```
-
-This registers a local entry point — **not** a PyPI install.
 
 ### 3. Start the HTTP server
 

@@ -360,8 +360,6 @@ python benchmarks/run_benchmark.py --url "https://arxiv.org/pdf/2503.21088"
 
 ## 🚀 快速开始
 
-> **说明**：OmniFetcher **尚未发布到 PyPI**，不能 `pip install omnifetcher`。请 clone 仓库后本地安装依赖运行。
-
 ### 前置要求
 
 - Python **3.10+**
@@ -382,15 +380,14 @@ pip install -r requirements.txt
 playwright install chromium   # Linux
 ```
 
-### 2. （可选）本地 editable 安装 CLI
+### 2. （可选）注册 CLI 命令
 
-若希望直接使用 `omnifetcher` 命令（等价于 `python -m omnifetcher.start`）：
+希望直接使用 `omnifetcher` 命令时（等价于 `python -m omnifetcher.start`）：
 
 ```bash
 pip install -e .
+omnifetcher
 ```
-
-这只是在本地注册 entry point，**不是**从 PyPI 安装。
 
 ### 3. 启动 HTTP 服务
 
