@@ -17,7 +17,7 @@ config/smart_detector_config.json.bak
 # Playwright / browser profiles
 .playwright/
 LightReadPlaywrightEdge/
-adapt-fetch-edge/
+omnifetcher-edge/
 
 # IDE
 .idea/

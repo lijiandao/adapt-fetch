@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Launch Adapt-Fetch HTTP server."""
+"""Launch OmniFetcher HTTP server."""
 
 from __future__ import annotations
 
@@ -14,12 +14,12 @@ def main() -> None:
 
     import uvicorn
 
-    host = os.getenv("ADAPT_FETCH_HOST", "0.0.0.0")
-    port = int(os.getenv("ADAPT_FETCH_PORT", "8900"))
-    reload = os.getenv("ADAPT_FETCH_RELOAD", "false").lower() == "true"
+    host = os.getenv("OMNIFETCHER_HOST", "0.0.0.0")
+    port = int(os.getenv("OMNIFETCHER_PORT", "8900"))
+    reload = os.getenv("OMNIFETCHER_RELOAD", "false").lower() == "true"
 
     uvicorn.run(
-        "adapt_fetch.server:app",
+        "omnifetcher.server:app",
         host=host,
         port=port,
         reload=reload,

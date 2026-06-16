@@ -20,7 +20,7 @@ logging.basicConfig(
     format='%(asctime)s - %(levelname)s - %(name)s - %(message)s'
 )
 from urllib.parse import urlparse, urljoin, urlunparse
-from adapt_fetch.utils.tackle_huge_html import (
+from omnifetcher.utils.tackle_huge_html import (
     should_use_readability_for_huge_html,
     map_reduce_readability,
     clean_with_readability_single,
@@ -42,19 +42,19 @@ from .playwright_router_helper import (
     detect_reason_from_status, detect_reason_from_text, PLAYWRIGHT_HEADLESS,
 )
 # 导入并发策略函数
-from adapt_fetch.utils.concurrent_strategies import (
+from omnifetcher.utils.concurrent_strategies import (
     crawl_with_concurrent_strategy,
     crawl_with_concurrent_strategy_no_jina
 )
 
 # 导入爬虫工具
-from adapt_fetch.easy_crawler.easy_crawler import EasyGetCrawler
+from omnifetcher.easy_crawler.easy_crawler import EasyGetCrawler
 # 导入 Clash 代理管理器
-from adapt_fetch.proxy.change_proxy import build_clash_proxy_manager
+from omnifetcher.proxy.change_proxy import build_clash_proxy_manager
 # 导入 PDF 爬虫工具
-from adapt_fetch.pdf_crawler.pdf_crawler import PDFCrawler
-from adapt_fetch.easy_pdf_crawler.easy_pdf_crawler import EasyPDFCrawler
-from adapt_fetch.jina.jina_router import crawl_single_url as jina_crawl_single_url, jina_proxy_pool
+from omnifetcher.pdf_crawler.pdf_crawler import PDFCrawler
+from omnifetcher.easy_pdf_crawler.easy_pdf_crawler import EasyPDFCrawler
+from omnifetcher.jina.jina_router import crawl_single_url as jina_crawl_single_url, jina_proxy_pool
 
 # 🔧 事件循环策略由 start_unified.py 统一控制
 # 不再在此处硬编码设置，避免覆盖全局配置

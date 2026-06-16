@@ -3,14 +3,14 @@ requires = ["setuptools>=68", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "adapt-fetch"
+name = "omnifetcher"
 version = "0.1.0"
-description = "Adaptive URL fetch engine with auto-learning routing for RAG and agents"
+description = "OmniFetcher - AI Agent Network Base: adaptive URL fetch with auto-learning routing"
 readme = "README.md"
 license = { text = "Apache-2.0" }
 requires-python = ">=3.10"
 authors = [{ name = "LightRead Team" }]
-keywords = ["crawler", "scraping", "playwright", "rag", "url-fetch", "adaptive"]
+keywords = ["crawler", "scraping", "playwright", "rag", "url-fetch", "agent", "omnifetcher"]
 classifiers = [
   "Development Status :: 4 - Beta",
   "Intended Audience :: Developers",
@@ -38,12 +38,12 @@ dependencies = [
 ]
 
 [project.scripts]
-adapt-fetch = "adapt_fetch.start:main"
+omnifetcher = "omnifetcher.start:main"
 
 [project.urls]
-Homepage = "https://github.com/lijiandao/adapt-fetch"
-Repository = "https://github.com/lijiandao/adapt-fetch"
+Homepage = "https://github.com/lijiandao/omnifetcher"
+Repository = "https://github.com/lijiandao/omnifetcher"
 
 [tool.setuptools.packages.find]
 where = ["."]
-include = ["adapt_fetch*"]
+include = ["omnifetcher*"]

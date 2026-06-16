@@ -305,7 +305,7 @@ class PDFCrawler:
         """
         try:
             # 默认直接下载并提取PDF文本
-            from adapt_fetch.easy_pdf_crawler.easy_pdf_crawler import EasyPDFCrawler
+            from omnifetcher.easy_pdf_crawler.easy_pdf_crawler import EasyPDFCrawler
             easy_pdf_crawler = EasyPDFCrawler(self.download_dir, self.static_url_base)
             
             if auto_download:

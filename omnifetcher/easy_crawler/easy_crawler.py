@@ -60,7 +60,7 @@ def is_probably_binary(text: str, *, min_len: int = 50, ratio_threshold: float =
 logger = logging.getLogger(__name__)
 
 # 统一的大HTML处理工具（强制）
-from adapt_fetch.utils.tackle_huge_html import (
+from omnifetcher.utils.tackle_huge_html import (
     should_use_readability_for_huge_html,
     map_reduce_readability,
     clean_with_readability_single,

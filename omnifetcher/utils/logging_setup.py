@@ -6,7 +6,7 @@ from logging.handlers import RotatingFileHandler
 
 
 def configure_global_logging(
-    service_name: str = "adapt_fetch",
+    service_name: str = "omnifetcher",
     log_dir: str = None,
     level: str = None,
     backup_count: int = 14,

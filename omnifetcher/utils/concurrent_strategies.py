@@ -10,7 +10,7 @@ import time
 import logging
 from typing import Dict, Any, Optional
 
-from adapt_fetch.playwright_service.playwright_router_helper import (
+from omnifetcher.playwright_service.playwright_router_helper import (
     CrawlRequest,
     cleanup_orphan_about_blank_pages,
     extract_text_from_html,
@@ -278,7 +278,7 @@ async def crawl_with_concurrent_strategy(
     async def jina_task():
         """Jina 爬虫任务 - 通过 r.jina.ai 读取 Markdown 文本，作为HTTP类竞速的一员"""
         try:
-            from adapt_fetch.jina.jina_router import crawl_single_url as jina_crawl_single_url, jina_proxy_pool
+            from omnifetcher.jina.jina_router import crawl_single_url as jina_crawl_single_url, jina_proxy_pool
             
             logger.debug("🚀 启动Jina爬虫...")
             # 复用 easyget_timeout 作为 Jina 侧超时时间（秒）

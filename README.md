@@ -1,6 +1,6 @@
-# Adapt-Fetch
+# OmniFetcher
 
-**Adaptive URL fetch engine** — automatically learns whether each domain should use fast HTTP, headless browser, or PDF fast path. Built for RAG pipelines and AI agents.
+**AI Agent Network Base** — adaptive URL fetch engine for agents and RAG. Automatically learns whether each domain should use fast HTTP, headless browser, or PDF fast path.
 
 ## Features
 
@@ -16,15 +16,13 @@
 ## Quick start
 
 ```bash
-cd adapt-fetch
+git clone https://github.com/lijiandao/omnifetcher.git
+cd omnifetcher
 python -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
 playwright install chromium   # or use system Edge (Windows)
 
-# copy and customize configs
-cp config/smart_detector_config.json config/smart_detector_config.local.json  # optional
-
-python -m adapt_fetch.start
+python -m omnifetcher.start
 # POST http://127.0.0.1:8900/crawl
 ```
 
@@ -60,8 +58,8 @@ Environment variables:
 
 | Variable | Default | Description |
 |----------|---------|-------------|
-| `ADAPT_FETCH_HOST` | `0.0.0.0` | HTTP bind host |
-| `ADAPT_FETCH_PORT` | `8900` | HTTP bind port |
+| `OMNIFETCHER_HOST` | `0.0.0.0` | HTTP bind host |
+| `OMNIFETCHER_PORT` | `8900` | HTTP bind port |
 | `APP_LOG_LEVEL` | `INFO` | Log level |
 | `DOUBLE_HOP_USER_HK` | — | 711 proxy user (HK pool) |
 | `DOUBLE_HOP_USER_GLOBAL` | — | 711 proxy user (global pool) |
@@ -85,7 +83,7 @@ For Jina / geo-sensitive fetches, run the local relay (requires your own upstrea
 ```bash
 export DOUBLE_HOP_USER_HK=your-user
 export DOUBLE_HOP_PASS=your-pass
-python -m adapt_fetch.proxy.double_hop_proxy
+python -m omnifetcher.proxy.double_hop_proxy
 ```
 
 ## Origin

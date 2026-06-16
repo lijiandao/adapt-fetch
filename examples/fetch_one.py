@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Minimal example: call Adapt-Fetch HTTP API."""
+"""Minimal example: call OmniFetcher HTTP API."""
 
 import json
 import os
@@ -7,7 +7,7 @@ import sys
 import urllib.request
 
 URL = sys.argv[1] if len(sys.argv) > 1 else "https://arxiv.org/abs/2503.21088"
-BASE = os.getenv("ADAPT_FETCH_BASE", "http://127.0.0.1:8900")
+BASE = os.getenv("OMNIFETCHER_BASE", "http://127.0.0.1:8900")
 
 payload = {
     "urls": [URL],

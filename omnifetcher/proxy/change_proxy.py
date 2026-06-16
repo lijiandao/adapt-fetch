@@ -12,7 +12,7 @@ from urllib.parse import quote
 import logging
 import aiohttp
 import threading
-from adapt_fetch.proxy.change_proxy_assist import (
+from omnifetcher.proxy.change_proxy_assist import (
     record_usage,
     select_with_weight,
 )

@@ -31,7 +31,7 @@ except ImportError:
     logging.getLogger(__name__).warning("PIL不可用，favicon处理功能受限")
 
 # 导入爬虫工具
-from adapt_fetch.easy_crawler.easy_crawler import EasyGetCrawler
+from omnifetcher.easy_crawler.easy_crawler import EasyGetCrawler
 
 
 def _package_root() -> Path:
