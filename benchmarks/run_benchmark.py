@@ -71,7 +71,7 @@ def bench_omnifetcher(url: str) -> BenchResult:
             f"{OMNIFETCHER_BASE.rstrip('/')}/crawl",
             {
                 "urls": [url],
-                "mode": "concurrent",
+                "mode": "normal",
                 "use_intellicache": True,
                 "htmlclean_enabled": True,
                 "extract_title": True,

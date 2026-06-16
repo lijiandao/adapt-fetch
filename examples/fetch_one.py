@@ -12,7 +12,7 @@ BASE = os.getenv("OMNIFETCHER_BASE", "http://127.0.0.1:8900")
 payload = {
     "urls": [URL],
     "timeout": 30000,
-    "mode": "concurrent",
+    "mode": "normal",
     "use_intellicache": True,
     "htmlclean_enabled": True,
     "extract_title": True,
