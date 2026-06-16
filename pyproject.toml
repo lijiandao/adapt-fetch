@@ -41,8 +41,8 @@ dependencies = [
 adapt-fetch = "adapt_fetch.start:main"
 
 [project.urls]
-Homepage = "https://github.com/lightread/adapt-fetch"
-Repository = "https://github.com/lightread/adapt-fetch"
+Homepage = "https://github.com/lijiandao/adapt-fetch"
+Repository = "https://github.com/lijiandao/adapt-fetch"
 
 [tool.setuptools.packages.find]
 where = ["."]
