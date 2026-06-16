@@ -63,6 +63,8 @@ Clash 代理轮换、可选双跳中继、超大 HTML Readability 分片 → 干
 </tr>
 </table>
 
+> **深入阅读**：[→ 核心亮点代码级解析](docs/深挖核心亮点.md)（SmartModeDetector 工作原理、竞速取消机制、健康检测漏斗、超大 HTML 分片）
+
 ---
 
 ## 📊 性能对比

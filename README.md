@@ -63,6 +63,8 @@ Proxy rotation (Clash), optional double-hop relay, huge-HTML readability map-red
 </tr>
 </table>
 
+> **Deep dive (Chinese)**: [→ How the four highlights work under the hood](docs/深挖核心亮点.md) — SmartModeDetector internals, concurrent-cancel design, health-check funnel, huge-HTML map-reduce.
+
 ---
 
 ## 📊 Benchmarks
